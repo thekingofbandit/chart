@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT playerid, score, lose FROM score ORDER BY playerid LIMIT 100");
+$query = sprintf("SELECT userid, facebook, twitter, googleplus FROM followers LIMIT 15");
 
 //execute query
 $result = $mysqli->query($query);
