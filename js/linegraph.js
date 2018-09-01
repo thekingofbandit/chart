@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url : "http://192.168.3.66/chartjs/followersdata.php",
+		url : "http://192.168.3.66/chart/followersdata.php",
 		type : "GET",
 		success : function(data){
 			console.log(data);
@@ -23,7 +23,7 @@ $(document).ready(function(){
 					{
 						label: "facebook",
 						fill: false,
-						lineTension: 0.1,
+						lineTension: 0.05,
 						backgroundColor: "rgba(59, 89, 152, 0.75)",
 						borderColor: "rgba(59, 89, 152, 1)",
 						pointHoverBackgroundColor: "rgba(59, 89, 152, 1)",
