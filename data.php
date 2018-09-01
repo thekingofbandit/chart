@@ -16,7 +16,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT playerid, score, lose FROM score ORDER BY playerid LIMIT 10");
+$query = sprintf("SELECT playerid, score, lose FROM score ORDER BY playerid LIMIT 100");
 
 //execute query
 $result = $mysqli->query($query);
